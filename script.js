@@ -26,7 +26,7 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
-    if (humanChoice !== null) {;
+    if (humanChoice !== null) {
         if (humanChoice === "Rock".toLowerCase()) {
             if (computerChoice === "Rock") {
                console.log("Tie");
