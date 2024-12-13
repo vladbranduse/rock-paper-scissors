@@ -1,5 +1,3 @@
-console.log("Hello World!");
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -14,5 +12,3 @@ function getComputerChoice() {
         return "Scissors";
     }
 }
-
-console.log(getComputerChoice());
