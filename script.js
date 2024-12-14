@@ -17,8 +17,6 @@ function getHumanChoice() {
     let choice = prompt("Rock, Paper or Scissors?");
     if (choice === "Rock".toLowerCase() || choice === "Paper".toLowerCase() || choice === "Scissors".toLowerCase()) {
         return choice;
-    } else {
-        return null;
     }
 }
 
@@ -62,12 +60,22 @@ function playRound(humanChoice, computerChoice) {
 }
   
 function playGame() {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+    let humanSelection;
+    let computerSelection;
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
 }
 
